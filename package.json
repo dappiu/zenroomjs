@@ -7,7 +7,7 @@
   "author": "Puria Nafisi Azizi <puria@dyne.org>",
   "license": "AGPL-3.0",
   "scripts": {
-    "lint": "eslint --ext .js ./",
+    "lint": "eslint --ext .js .",
     "build": "cd zenroom && make javascript-npm",
     "clean": "rimraf dist/lib && cd zenroom && make clean",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
@@ -24,33 +24,33 @@
     "dist"
   ],
   "devDependencies": {
-    "@babel/cli": "^7.2.0",
-    "@babel/core": "^7.2.0",
-    "@babel/preset-env": "^7.2.0",
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
     "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.0.0",
-    "babel-plugin-istanbul": "^5.1.0",
+    "@babel/register": "^7.5.5",
+    "babel-plugin-istanbul": "^5.2.0",
     "babelify": "^10.0.0",
     "chai": "^4.2.0",
-    "codecov": "^3.1.0",
-    "documentation": "^8.1.2",
-    "eslint": "^5.9.0",
+    "codecov": "^3.5.0",
+    "documentation": "^12.0.3",
+    "eslint": "^6.1.0",
     "eslint-config-standard": "^13.0.1",
     "eslint-plugin-import": "^2.18.2",
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.0",
     "mkdirp": "^0.5.1",
-    "mocha": "^5.2.0",
-    "nyc": "^13.1.0",
-    "release-it": "^8.3.0",
-    "rimraf": "^2.6.2",
-    "sinon": "^7.1.1",
-    "standard": "^12.0.1"
+    "mocha": "^6.2.0",
+    "nyc": "^14.1.1",
+    "release-it": "^12.3.4",
+    "rimraf": "^2.6.3",
+    "sinon": "^7.3.2",
+    "standard": "^13.1.0"
   },
   "dependencies": {
     "core-js": "^3.1.4",
-    "regenerator-runtime": "^0.13.2"
+    "regenerator-runtime": "^0.13.3"
   },
   "standard": {
     "ignore": [
