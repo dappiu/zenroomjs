@@ -32,8 +32,6 @@ require("regenerator-runtime/runtime");
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-var MAX_BUFFER_SIZE = 1048576;
-
 var C = require('../dist/lib/zenroom');
 /* istanbul ignore next */
 
@@ -77,6 +75,8 @@ var zenroom = function () {
    * @example <caption>Example usage of `script()`</caption>
    * // returns zenroom
    * import zenroom from 'zenroom'
+   * // or without ES6 syntax
+   * // const zenroom = require('zenroom').default
    *
    * const script = 'print("hello")'
    * zenroom.script(script).zenroom_exec().reset()
@@ -98,6 +98,8 @@ var zenroom = function () {
    * @example <caption>Example usage of `keys()`</caption>
    * // returns zenroom
    * import zenroom from 'zenroom'
+   * // or without ES6 syntax
+   * // const zenroom = require('zenroom').default
    *
    * const script = `
    *                  keys = JSON.decode(KEYS)
@@ -124,6 +126,8 @@ var zenroom = function () {
    * @example <caption>Example usage of `conf()`</caption>
    * // returns zenroom
    * import zenroom from 'zenroom'
+   * // or without ES6 syntax
+   * // const zenroom = require('zenroom').default
    *
    * const script = 'print("hello")'
    * const conf = 'umm'
@@ -146,6 +150,8 @@ var zenroom = function () {
    * @example <caption>Example usage of `data()`</caption>
    * // returns zenroom
    * import zenroom from 'zenroom'
+   * // or without ES6 syntax
+   * // const zenroom = require('zenroom').default
    *
    * const script = `
    *                  data = JSON.decode(DATA)
@@ -172,6 +178,8 @@ var zenroom = function () {
    * @example <caption>Example usage of `print()`</caption>
    * // returns zenroom
    * import zenroom from 'zenroom'
+   * // or without ES6 syntax
+   * // const zenroom = require('zenroom').default
    *
    * const savedLines = []
    * const printFunction = (text) => { savedLines.push(text) }
@@ -198,6 +206,8 @@ var zenroom = function () {
    * @example <caption>Example usage of `success()`</caption>
    * // returns zenroom
    * import zenroom from 'zenroom'
+   * // or without ES6 syntax
+   * // const zenroom = require('zenroom').default
    *
    * const script = 'print("hello")'
    * zenroom.script(script).success(()=>{
@@ -222,6 +232,8 @@ var zenroom = function () {
    * @example <caption>Example usage of `error()`</caption>
    * // returns zenroom
    * import zenroom from 'zenroom'
+   * // or without ES6 syntax
+   * // const zenroom = require('zenroom').default
    *
    * const script = 'print("hello")';
    * zenroom.script(script).error(()=>{
@@ -250,14 +262,14 @@ var zenroom = function () {
    * <li>2 = DEBUG</li>
    * </ul>
    *
-   * @example <caption>Example usage of `success`</caption>
+   * @example <caption>Example usage of `verbosity()`</caption>
    * // returns zenroom
    * import zenroom from 'zenroom'
+   * // or without ES6 syntax
+   * // const zenroom = require('zenroom').default
    *
    * const script = 'print("hello")'
-   * zenroom.script(script).success(()=>{
-   *    pleaseRunSomeOtherMethodAfter();
-   * }).zenroom_exec()
+   * zenroom.script(script).verbosity(2).zenroom_exec()
    *
    * @param {number} verbosity
    * @returns {object} the zenroom module
@@ -278,6 +290,8 @@ var zenroom = function () {
    * @example <caption>Example usage of `zenroom_exec()`</caption>
    * // returns zenroom
    * import zenroom from 'zenroom'
+   * // or without ES6 syntax
+   * // const zenroom = require('zenroom').default
    *
    * const script = 'print("hello")';
    * zenroom.script(script).zenroom_exec()
@@ -300,6 +314,8 @@ var zenroom = function () {
    * @example <caption>Example usage of `zencode_exec()`</caption>
    * // returns zenroom
    * import zenroom from 'zenroom'
+   * // or without ES6 syntax
+   * // const zenroom = require('zenroom').default
    *
    * const zencode = 'print("hello")';
    * zenroom.script(script).zencode_exec()
@@ -333,6 +349,8 @@ var zenroom = function () {
    * @example <caption>Example usage of `init()`</caption>
    * // returns zenroom
    * import zenroom from 'zenroom'
+   * // or without ES6 syntax
+   * // const zenroom = require('zenroom').default
    *
    * const encrypt_secret_to_many = {
    *  script: `keyring = ECDH.new()
@@ -407,6 +425,8 @@ var zenroom = function () {
    * @example <caption>Example usage of `reset()`</caption>
    * // returns zenroom
    * import zenroom from 'zenroom'
+   * // or without ES6 syntax
+   * // const zenroom = require('zenroom').default
    *
    * const script = 'print("hello")';
    * zenroom.script(script)
