@@ -51,13 +51,6 @@
     "core-js": "^3.1.4",
     "regenerator-runtime": "^0.13.3"
   },
-  "standard": {
-    "ignore": [
-      "dist",
-      "zenroom",
-      "test"
-    ]
-  },
   "nyc": {
     "extends": "@istanbuljs/nyc-config-babel",
     "check-coverage": true,
